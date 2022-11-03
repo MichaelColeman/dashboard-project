@@ -10,17 +10,17 @@
 :root {
   --color-main: rgb(0, 132, 255);
   --color-accent: rgb(219, 175, 54);
-  --color-lightgrey: rgb(210, 210, 214);
+  --color-main-lightgrey: rgb(210, 210, 214);
   --color-sidebar: var(--color-main);
   --color-sidebar-hover: rgba(0, 0, 0, 0.2);
-  --color-main-bg: var(--color-lightgrey);
-  --color-input-bg: var(--color-lightgrey);
+  --color-main-bg: var(--color-main-lightgrey);
+  --color-input-bg: var(--color-main-lightgrey);
+  --color-bg-card: white;
   --icon-size-profile: 42px;
   --icon-size-trending: 42px;
   --icon-size-welcome: 64px;
   --card-min-width: 260px;
   --card-min-height: 175px;
-  /* --card-max-width: 350px; */
 }
 
 html,
@@ -46,10 +46,6 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
-/* ------------- */
-/* -- Header  -- */
-/* ------------- */
 
 .header {
   grid-area: header;
@@ -150,10 +146,6 @@ body {
   font-size: 16px;
 }
 
-/* ------------- */
-/* -- Sidebar -- */
-/* ------------- */
-
 .sidebar {
   display: flex;
   grid-area: sidebar;
@@ -221,22 +213,16 @@ body {
     'project-section announcements'
     'project-section trending';
   gap: 15px;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 15px 15px 0px 15px;
 }
 
-main h2 {
+.main-layout-container .section-title {
   padding: 10px 0;
 }
 
 .project-section {
-  grid-row: 1 / 3;
+  grid-area: project-section;
 }
-
-/* ------------- */
-/* ---  card --- */
-/* ------------- */
 
 .card-container {
   display: grid;
@@ -251,7 +237,7 @@ main h2 {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.288);
   border-left: 10px solid var(--color-accent);
   border-radius: 8px;
-  background-color: white;
+  background-color: var(--color-bg-card);
   padding: 35px 20px 20px 20px;
   min-height: var(--card-min-height);
 }
@@ -335,6 +321,4 @@ main h2 {
   width: var(--icon-size-trending);
   height: var(--icon-size-trending);
 }
-
-@media only screen and (max-width: 900px) {
-}
+/* 341 */
