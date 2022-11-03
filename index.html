@@ -9,11 +9,12 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="main-layout-container">
+    <div class="body-layout-container">
       <div class="header">
         <div class="header-layout-container">
           <div class="search-bar">
-            <span class="material-icons">search</span><input type="search" name="main-search" id="main-search" />
+            <span class="material-icons">search</span>
+            <input type="search" name="main-search" id="main-search" tab-index="0" />
           </div>
           <div class="status-bar">
             <span class="material-icons notification">notifications_active</span>
@@ -58,18 +59,84 @@
         </div>
       </div>
       <main class="main">
-        <h2 class="section-title"></h2>
-        <div class="container">
-          <article class="card"></article>
-          <article class="card"></article>
-          <article class="card"></article>
-          <article class="card"></article>
-          <article class="card"></article>
-          <article class="card"></article>
+        <div class="main-layout-container">
+          <div class="project-section">
+            <h2 class="section-title">Your Projects</h2>
+            <div class="card-container">
+              <article class="card"></article>
+              <article class="card"></article>
+              <article class="card"></article>
+              <article class="card"></article>
+              <article class="card"></article>
+              <article class="card"></article>
+            </div>
+          </div>
+          <div class="announcements-section">
+            <h2 class="section-title">Announcements</h2>
+            <div class="announcements-container">
+              <div class="announcement">
+                <h4>Site Maintenance</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim non repudiandae!</p>
+              </div>
+              <div class="announcement">
+                <h4>Community Share Day</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur eius neque deserunt quas
+                  ad!
+                </p>
+              </div>
+              <div class="announcement">
+                <h4>Updated Privacy Policy</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, nisi? Vel sed labore dolor minus
+                  soluta eveniet excepturi sint, natus velit animi nostrum similique quisquam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="trending-section">
+            <h2 class="section-title">Trending</h2>
+            <div class="trending-container">
+              <div class="trending-profile">
+                <div class="image-round-container profile-pic">
+                  <img src="./images/profile-pic.png" alt="profile picture" />
+                </div>
+                <div class="profile-info">
+                  <p class="name">@tegan</p>
+                  <p class="project-name">Really Cool Project</p>
+                </div>
+              </div>
+              <div class="trending-profile">
+                <div class="image-round-container profile-pic">
+                  <img src="./images/profile-pic.png" alt="profile picture" />
+                </div>
+                <div class="profile-info">
+                  <p class="name">@morand</p>
+                  <p class="project-name">Exploring by Sail Boat</p>
+                </div>
+              </div>
+              <div class="trending-profile">
+                <div class="image-round-container profile-pic">
+                  <img src="./images/profile-pic.png" alt="profile picture" />
+                </div>
+                <div class="profile-info">
+                  <p class="name">@lady_c</p>
+                  <p class="project-name">Hummingbird Farm</p>
+                </div>
+              </div>
+              <div class="trending-profile">
+                <div class="image-round-container profile-pic">
+                  <img src="./images/profile-pic.png" alt="profile picture" />
+                </div>
+                <div class="profile-info">
+                  <p class="name">@alexF</p>
+                  <p class="project-name">Life Changing App</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-      <div class="announcements"></div>
-      <div class="trending"></div>
     </div>
   </body>
 </html>
